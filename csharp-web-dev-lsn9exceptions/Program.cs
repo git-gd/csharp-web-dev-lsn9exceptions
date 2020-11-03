@@ -9,7 +9,8 @@ namespace csharp_web_dev_lsn9exceptions
         static double Divide(double x, double y)
         {
             // Write your code here!
-            if (y == 0) throw new ArgumentOutOfRangeException("Cannot divide by 0.");
+            //if (y == 0) throw new ArgumentOutOfRangeException("Cannot divide by 0.");
+            if (y == 0) throw new DivideByZeroException("Cannot divide by 0.");
 
             return x / y;
         }
@@ -29,7 +30,7 @@ namespace csharp_web_dev_lsn9exceptions
             try
             {
                 Divide(1, 0);
-            } catch (ArgumentOutOfRangeException e)
+            } catch (DivideByZeroException e)
             {
                 Console.WriteLine(e.Message);
             }
