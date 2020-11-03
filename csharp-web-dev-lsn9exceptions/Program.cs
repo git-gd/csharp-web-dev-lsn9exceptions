@@ -41,6 +41,7 @@ namespace csharp_web_dev_lsn9exceptions
             students.Add("Elizabeth", "MyCode.cs");
             students.Add("Stefanie", "CoolProgram.cs");
             students.Add("Charles", "ReadMe.txt");
+            students.Add("Ben", null);
 
             foreach (string student in students.Keys)
             {
